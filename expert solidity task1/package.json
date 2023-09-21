@@ -1,0 +1,28 @@
+{
+  "name": "multi_pay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd multi_pay && npm run dev",
+    "build": "cd multi_pay && npm run build",
+    "start": "cd multi_pay && npm run start",
+    "lint": "cd multi_pay && npm run lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WiseMrMusa/Multi_Pay.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WiseMrMusa/Multi_Pay/issues"
+  },
+  "homepage": "https://github.com/WiseMrMusa/Multi_Pay#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "dotenv": "^16.3.1"
+  }
+}
