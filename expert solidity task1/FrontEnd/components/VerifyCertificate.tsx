@@ -60,10 +60,10 @@ export function VerifyCertificate() {
         functionName: "getUserVests",
         watch: true,
         args: [addr],
-        onSuccess(data: string) {
+        onSuccess(data: string[]) {
             console.log('Success', getCompanyData)
             // setChildAddr(data);
-            setContractAddresses(getCompanyData);
+            setContractAddresses(getCompanyData as Address[]);
         },
     })
     

@@ -19,7 +19,7 @@ export function IssueCertificate() {
     const [tokenAmount, setTokenAmount] = useState(0);
     const [duration, setDuration] = useState(0);
 
-    const [singleAccount, setSingleAccount] = useState("");
+    const [singleAccount, setSingleAccount] = useState<Address>();
     const [connectedAddr, setConnectedAddr] = useState("");
 
 
@@ -52,7 +52,7 @@ export function IssueCertificate() {
 
         setConnectedAddr(address as Address);
         console.log(`final child addr:`, certAddr);
-        setSingleAccount(certAddr);
+        setSingleAccount(certAddr as Address);
 
     }, [address, certAddr, connectedAddr]);
 

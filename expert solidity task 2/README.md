@@ -1,66 +1,17 @@
-## Foundry
+# INSURANCE AND COLATERAL PROTECTION CONTRACT
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This Solidity program is a simple implementation of an "Insurance contract" and a "Colateral protection contract", it impliments the factory contract model to allow individuals create either an insurance contracts or a colateral protection contract for crypto backed loans.
 
-Foundry consists of:
+## Description
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+This program is a simple contract written in Solidity, a programming language used for developing smart contracts on the Ethereum blockchain. The contract is a factory contract that deploys new instances of a child contract depending on the users choice. The factory is able to deploy an insurance contract or a Collateral contract. The insurance contract allows a user to pay his premium monthly or anually depending on the users choice while the Colateral management contract implements a logic that helps check if the value of a user's colateral has droped below 20, of which if it does then the users colatetal is liquidated, the user cal also repay back his loan to receive back his colateral.
 
-## Documentation
+## Authors
 
-https://book.getfoundry.sh/
+Idogwu Chinonso
+[@metacraftersio](https://twitter.com/ChinonsoIdogwu)
 
-## Usage
 
-### Build
+## License
 
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+This project is licensed under the MIT License - see the LICENSE.md file for details

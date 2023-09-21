@@ -16,10 +16,10 @@ export function CreateCertificate() {
     const [certSymbol, setCertSymbol] = useState('');
     const [tokenAddress, setTokenAddress] = useState('');
     const [duration, setDuration] = useState(0);
-    const [singleAccount, setSingleAccount] = useState("");
+    const [singleAccount, setSingleAccount] = useState<any>("");
     const [addr, setAddr] = useState("");
     const [done, setdone] = useState<Boolean>(false);
-    const [connectedAddr, setConnectedAddr] = useState("");
+    const [connectedAddr, setConnectedAddr] = useState<any>("");
 
 
 

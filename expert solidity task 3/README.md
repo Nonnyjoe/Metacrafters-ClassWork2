@@ -1,66 +1,17 @@
-## Foundry
+# SMART CONTRACT SECURITY
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This Repo contains the simplified and minimalistic audit report of the metacrafters security task, it also contains the corrected and updated previously vulnurable code now written in a more recent solidity version and the bugs fixed.
 
-Foundry consists of:
+## Description
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+This program is a simple contract written in Solidity, a programming language used for developing smart contracts on the Ethereum blockchain. The contract “StorageVictim” contains 1 critical vulnerability, 1 medium vulnerability and 2 informational vulnerability. A conplete audit report can be found at AuditReport.pdf file or the AuditReport.md file. The updated and corrected version of the "StorageVictim" contract can be found inside the src folder.
 
-## Documentation
+## Authors
 
-https://book.getfoundry.sh/
+Idogwu Chinonso
+[@metacraftersio](https://twitter.com/ChinonsoIdogwu)
 
-## Usage
 
-### Build
+## License
 
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+This project is licensed under the MIT License - see the LICENSE.md file for details
