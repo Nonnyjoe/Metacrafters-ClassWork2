@@ -77,5 +77,8 @@ contract ColateralPool {
         // Check if the price has dropped by 20% or more
         return priceDropPercentage >= 20;
     }
+
+        receive() external payable {
+    }
     
 }
